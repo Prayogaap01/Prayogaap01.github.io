@@ -1,0 +1,64 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #ffecd2, #fcb69f, #ff9a9e);
+    background-size: 600% 600%;
+    animation: backgroundAnimation 20s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 50%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.lyrics-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    position: absolute;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fadeInOut 3s forwards;
+}
+
+/* Fade In dan Fade Out */
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(20px); }
+    25% { opacity: 1; transform: translateY(0); }
+    75% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Set delay untuk masing-masing bait */
+.line.delay-1 { animation-delay: 0s; }
+.line.delay-2 { animation-delay: 3s; }
+.line.delay-3 { animation-delay: 6s; }
+.line.delay-4 { animation-delay: 9s; }
+.line.delay-5 { animation-delay: 12s; }
+.line.delay-6 { animation-delay: 15s; }
+.line.delay-7 { animation-delay: 18s; }
+.line.delay-8 { animation-delay: 21s; }
+.line.delay-9 { animation-delay: 24s; }
+.line.delay-10 { animation-delay: 27s; }
+.line.delay-11 { animation-delay: 30s; }
+.line.delay-12 { animation-delay: 33s; }
+.line.delay-13 { animation-delay: 36s; }
+.line.delay-14 { animation-delay: 39s; }
+.line.delay-15 { animation-delay: 42s; }
+.line.delay-16 { animation-delay: 45s; }
+.line.delay-17 { animation-delay: 48s; }
